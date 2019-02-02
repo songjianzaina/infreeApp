@@ -1,0 +1,98 @@
+ext {
+    android = [
+            compileSdkVersion: 23,
+            buildToolsVersion: '25.0.2',
+            minSdkVersion    : 15,
+            targetSdkVersion : 23,
+            versionCode      : 1,
+            versionName      : '1.0.0'
+    ]
+
+    dependVersion = [
+            support: "23.4.0"
+    ]
+
+    dependencies = [
+            "otto"               : 'com.squareup:otto:1.3.5',
+
+            // ------------- Android -------------
+            supportV4            : "com.android.support:support-v4:${dependVersion.support}",
+            appcompatV7          : "com.android.support:appcompat-v7:${dependVersion.support}",
+            design               : "com.android.support:design:${dependVersion.support}",
+            junit                : "junit:junit:4.12",
+
+            //------------- 测试 ------------
+            espresso             : "com.android.support.test.espresso:espresso-core:2.2.2",
+
+            //------------- 文件下载 -------------
+            filedownloader       : "com.liulishuo.filedownloader:library:1.5.5",
+
+            //------------- 多媒体播放  视频播放 -------------
+            jiecaovideoplayer    : "fm.jiecao:jiecaovideoplayer:5.5.4",
+
+            // ------------- 网络请求 -------------
+            okhttp               : 'com.squareup.okhttp3:okhttp:3.3.1',
+            okhttp3_loging       : 'com.squareup.okhttp3:logging-interceptor:3.3.1',
+            retrofit             : 'com.squareup.retrofit2:retrofit:2.4.0',
+            async             : 'com.loopj.android:android-async-http:1.4.9',
+
+            // ------------- 图片加载 -------------
+            glide                : 'com.github.bumptech.glide:glide:3.7.0',//2012年google
+            picasso              : 'com.squareup.picasso:picasso:2.5.2',//2013年JakeWharton
+            image_loader         : 'com.nostra13.universalimageloader:universal-image-loader:1.9.5',//2011年 nostra13
+            fresco               : 'com.facebook.fresco:fresco:0.11.0',//2015年faceboook
+            animatedGif          : 'com.facebook.fresco:animated-gif:0.12.0',
+            photoView            : 'com.github.chrisbanes:PhotoView:1.3.1',
+            circleimageview      : 'de.hdodenhof:circleimageview:2.1.0',
+            ucrop                : 'com.github.yalantis:ucrop:2.2.1',//图片裁剪
+            Luban                : 'top.zibin:Luban:1.1.1',//图片压缩
+            gpuimage                : 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1',//图片渲染 类似美图秀秀
+
+            // ------------- RxAndroid -------------
+            rxAndroid            : 'io.reactivex.rxjava2:rxandroid:2.0.2',
+            rxJava               : 'io.reactivex.rxjava2:rxjava:2.1.10',
+            rxjava_adapter             : 'com.squareup.retrofit2:adapter-rxjava2:2.4.0',
+
+
+            // ------------- json解析 -------------
+            fastJson             : 'com.alibaba:fastjson:1.1.54.android',
+            gson                 : 'com.google.code.gson:gson:2.8.0',
+
+            // ------------- log打印工具 -------------
+            logger               : 'com.orhanobut:logger:1.15',
+
+            greendao             : 'org.greenrobot:greendao:3.2.0',
+
+            // ------------- ButterKnife -------------
+            butterknife          : 'com.jakewharton:butterknife:8.4.0',
+            butterknifeCompiler  : 'com.jakewharton:butterknife-compiler:8.4.0',
+
+            // ------------- LeakCanary -------------
+            leakcanaryAndroid    : 'com.squareup.leakcanary:leakcanary-android:1.5',
+            leakcanaryAndroidNoOp: 'com.squareup.leakcanary:leakcanary-android-no-op:1.5',
+
+            //--------------自定义dialog-----------
+            material_dialogs     : 'com.afollestad.material-dialogs:core:0.9.4.5',
+
+            //--------------滑动删除-----------
+            swipelayout          : 'com.daimajia.swipelayout:library:1.2.0@aar',
+            recyclerview         : 'com.android.support:recyclerview-v7:21.0.0',
+
+            //--------------滑动手势关闭页面   类似于微信聊天窗口滑动关闭-----------
+            swipebacklayout      : 'me.imid.swipebacklayout.lib:library:1.0.0',
+
+            //--------------快速制作欢迎页-----------
+            appintro             : 'com.github.apl-devs:appintro:v4.2.0',
+
+            //--------------设置沉浸式状态栏样式-----------
+            statusbarutil             : 'com.jaeger.statusbarutil:library:1.4.0',
+
+            //--------------富文本编辑器-----------
+            richeditor             : 'jp.wasabeef:richeditor-android:1.2.2',
+
+            //--------------动态权限申请 比如开启相机 麦克风等等-----------
+            rxpermissions             : 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar',
+
+    ]
+
+}

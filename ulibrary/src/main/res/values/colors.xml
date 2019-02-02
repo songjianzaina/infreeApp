@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#654079</color>
+    <color name="bg">#F2F2F2</color>
+    <color name="subtitle_and_name_color">#654079</color>
+    <color name="hint_and_content_color">#656565</color>
+
+    <color name="btn_cancel_color">#999999</color>
+    <color name="btn_confirm_color">#303F9F</color>
+</resources>
