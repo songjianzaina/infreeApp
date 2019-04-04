@@ -15,11 +15,13 @@ import io.reactivex.Observable;
 public class MainModel implements MainContract.Model {
     @Override
     public Observable<BaseHttpResponse<WeatherEntity>> getWeather(String city) {
-        return RetrofitManager.getInstance().getRequestService().getWeather(city);
+        return RequestService.getInstance().getRequestService().getWeather(city);
+
+
     }
 
     @Override
     public Observable<BaseHttpResponse<TimeEntity>> getTime(int time) {
-        return RetrofitManager.getInstance().getRequestService().getTime(time);
+        return RequestService.getInstance().getRequestService().getTime(time);
     }
 }

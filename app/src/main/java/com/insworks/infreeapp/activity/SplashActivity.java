@@ -26,7 +26,6 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-
     }
 
     @Override

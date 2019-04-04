@@ -1,10 +1,9 @@
-package cc.urowks.ulibrary.net.async_http.api;
+package cc.urowks.ulibrary.net.async_http;
 
 import com.loopj.android.http.RequestHandle;
 import com.loopj.android.http.RequestParams;
 
-import cc.urowks.ulibrary.net.async_http.HttpUtil;
-import cc.urowks.ulibrary.net.async_http.ResponseHandler;
+import cc.urowks.ulibrary.net.Api;
 
 
 /**

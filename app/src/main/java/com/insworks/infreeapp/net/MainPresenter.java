@@ -2,6 +2,7 @@ package com.insworks.infreeapp.net;
 
 import com.insworks.infreeapp.bean.WeatherEntity;
 
+import cc.urowks.ulibrary.net.retrofit2.RetrofitManager;
 import cc.urowks.ulibrary.net.retrofit2.RxObserverListener;
 import cc.urowks.ulibrary.widget.MultipleStatusView;
 

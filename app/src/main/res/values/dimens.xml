@@ -2,4 +2,30 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--一级字体大小  h1-h2由大至小   h1为主标题大小-->
+    <dimen name="text_size_h1">18sp</dimen>
+    <!--二级字体大小  -->
+    <dimen name="text_size_h2">17sp</dimen>
+    <!--三级字体大小  -->
+    <dimen name="text_size_h3">16sp</dimen>
+    <!--四级字体大小  -->
+    <dimen name="text_size_h4">15sp</dimen>
+    <!--五级字体大小  -->
+    <dimen name="text_size_h5">14sp</dimen>
+    <!--六级字体大小  -->
+    <dimen name="text_size_h6">13sp</dimen>
+    <!--六级字体大小  特殊字体大小-->
+    <dimen name="text_size_special">18sp</dimen>
+
+    <!--底部导航栏整体高度-->
+    <dimen name="bottom_nav_height">48dp</dimen>
+
+    <!--titlebar高度-->
+    <dimen name="titlebar_height">48dp</dimen>
+    <!--item块 左右边距-->
+    <dimen name="div_horizontal_margin">10dp</dimen>
+    <!--item块 上下边距-->
+    <dimen name="div_vertical_margin">6dp</dimen>
+
 </resources>

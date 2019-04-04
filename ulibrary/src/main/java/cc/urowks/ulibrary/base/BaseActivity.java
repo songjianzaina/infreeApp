@@ -168,7 +168,7 @@ public abstract class BaseActivity<P extends BasePresenter, M extends BaseModel>
         //再按一次返回
         if (ActivityManager.getInstance().getCurrentActivity().getLocalClassName() == "MainActivity") {
             if ((System.currentTimeMillis() - exitTime) > 2000) {
-                ToastUtil.showToast("再按一次退出天下奇医");
+                ToastUtil.showToast("再按一次退出");
                 exitTime = System.currentTimeMillis();
             } else {
                 finish();

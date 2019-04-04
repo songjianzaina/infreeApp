@@ -112,7 +112,7 @@ public class LoginActivity extends BaseActivity<MainPresenter, MainModel> implem
 
     private void loginBtnUnusable() {
         loginBtn.setTextColor(getResources().getColor(R.color.button_font_color));
-        loginBtn.setBackgroundResource(R.color.forbidden_button_bg);
+        loginBtn.setBackgroundResource(R.color.button_color_forbidden);
         loginBtn.setClickable(false);
         isLoginBtnUsable = false;
     }
@@ -144,7 +144,8 @@ public class LoginActivity extends BaseActivity<MainPresenter, MainModel> implem
                 if (!isLoginBtnUsable) {
                     return;
                 }
-                ActivityUtil.startActivity(MainActivity.class);
+                ActivityUtil.startActivity(WeatherActivity.class);
+//                ActivityUtil.startActivity(HomeActivity.class);
                 finish();
                 break;
         }

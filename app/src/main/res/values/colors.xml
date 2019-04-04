@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentd">@android:color/holo_blue_bright</color>
 
     <!--主题色-->
     <color name="primary_color">#009FEA</color>
@@ -10,9 +11,27 @@
     <color name="bg_color">#F5F5F5</color>
     <!--按钮内部字体颜色-->
     <color name="button_font_color">#FFFFFF</color>
-    <!--禁用按钮底色 -->
-    <color name="forbidden_button_bg">#AFAFAF</color>
+
+    <!--禁用Button色 -->
+    <color name="button_color_forbidden">#AFAFAF</color>
+    <!--活动Button色 -->
+    <color name="button_color_active">#009FEA</color>
 
     <!--主标题 导航栏文字 对话-->
     <color name="main_title_color">#333333</color>
+
+    <!--一级字体颜色-h1-h4由深入浅 -->
+    <color name="text_color_h1">#000000</color>
+    <!--二级字体颜色-->
+    <color name="text_color_h2">#505050</color>
+    <!--三级字体颜色-->
+    <color name="text_color_h3">#818181</color>
+    <!--四级字体颜色   -->
+    <color name="text_color_h4">#CBCBCB</color>
+    <!--五级字体颜色   白色-->
+    <color name="text_color_h5">#FFFFFF</color>
+    <!--特殊字体颜色-->
+    <color name="text_color_special">#333333</color>
+
+
 </resources>

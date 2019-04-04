@@ -10,7 +10,10 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
-
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
     }
     buildTypes {
         release {
@@ -23,13 +26,13 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+//    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
 
     compile rootProject.ext.dependencies.appcompatV7
     testCompile rootProject.ext.dependencies.junit
-    compile rootProject.ext.dependencies.design
+//    compile rootProject.ext.dependencies.design
     // 网络请求 可以有两种关联写法
     compile rootProject.ext.dependencies.okhttp
     compile rootProject .ext.dependencies[ "okhttp3_loging"]
@@ -48,5 +51,25 @@ dependencies {
     // butterknife
     compile rootProject .ext.dependencies[ "butterknife"]
     compile rootProject .ext.dependencies[ "butterknifeCompiler"]
+    compile 'com.android.support:multidex:'
+
+    compile "com.alibaba:arouter-api:1.2.2"
 
 }
+
+
+
+apply plugin: 'maven'
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.version = '1.0.1'
+        pom.artifactId = 'library_base'
+        pom.groupId = 'com.insworks'
+        pom.packaging = 'aar'
+        repository(url: rootProject .ext.uploadArchives["repository_url"])
+
+    }
+}
+
+
+

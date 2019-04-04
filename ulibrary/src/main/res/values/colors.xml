@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary_color">#654079</color>
-    <color name="bg">#F2F2F2</color>
     <color name="subtitle_and_name_color">#654079</color>
     <color name="hint_and_content_color">#656565</color>
 
     <color name="btn_cancel_color">#999999</color>
     <color name="btn_confirm_color">#303F9F</color>
+
+
+
+
+
+    <!--主题色-->
+    <color name="primary_color">#009FEA</color>
+    <!--背景色-->
+    <color name="bg">#F5F5F5</color>
+
+    <color name="subtitle_color">#654079</color>
+    <color name="titlebar_color">#654079</color>
+
+
+    <!--禁用Button色 -->
+    <color name="button_color_forbidden">#AFAFAF</color>
+    <!--活动Button色 -->
+    <color name="button_color_active">#009FEA</color>
+
+
+
 </resources>

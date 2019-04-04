@@ -34,7 +34,7 @@ ext {
             okhttp               : 'com.squareup.okhttp3:okhttp:3.3.1',
             okhttp3_loging       : 'com.squareup.okhttp3:logging-interceptor:3.3.1',
             retrofit             : 'com.squareup.retrofit2:retrofit:2.4.0',
-            async             : 'com.loopj.android:android-async-http:1.4.9',
+            async                : 'com.loopj.android:android-async-http:1.4.9',
 
             // ------------- 图片加载 -------------
             glide                : 'com.github.bumptech.glide:glide:3.7.0',//2012年google
@@ -46,13 +46,12 @@ ext {
             circleimageview      : 'de.hdodenhof:circleimageview:2.1.0',
             ucrop                : 'com.github.yalantis:ucrop:2.2.1',//图片裁剪
             Luban                : 'top.zibin:Luban:1.1.1',//图片压缩
-            gpuimage                : 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1',//图片渲染 类似美图秀秀
+            gpuimage             : 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1',//图片渲染 类似美图秀秀
 
             // ------------- RxAndroid -------------
             rxAndroid            : 'io.reactivex.rxjava2:rxandroid:2.0.2',
             rxJava               : 'io.reactivex.rxjava2:rxjava:2.1.10',
-            rxjava_adapter             : 'com.squareup.retrofit2:adapter-rxjava2:2.4.0',
-
+            rxjava_adapter       : 'com.squareup.retrofit2:adapter-rxjava2:2.4.0',
 
             // ------------- json解析 -------------
             fastJson             : 'com.alibaba:fastjson:1.1.54.android',
@@ -61,7 +60,7 @@ ext {
             // ------------- log打印工具 -------------
             logger               : 'com.orhanobut:logger:1.15',
 
-            greendao             : 'org.greenrobot:greendao:3.2.0',
+            // greendao             : 'org.greenrobot:greendao:3.2.0',
 
             // ------------- ButterKnife -------------
             butterknife          : 'com.jakewharton:butterknife:8.4.0',
@@ -85,14 +84,14 @@ ext {
             appintro             : 'com.github.apl-devs:appintro:v4.2.0',
 
             //--------------设置沉浸式状态栏样式-----------
-            statusbarutil             : 'com.jaeger.statusbarutil:library:1.4.0',
+            statusbarutil        : 'com.jaeger.statusbarutil:library:1.4.0',
 
             //--------------富文本编辑器-----------
-            richeditor             : 'jp.wasabeef:richeditor-android:1.2.2',
+            richeditor           : 'jp.wasabeef:richeditor-android:1.2.2',
 
             //--------------动态权限申请 比如开启相机 麦克风等等-----------
-            rxpermissions             : 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar',
+            rxpermissions        : 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar',
 
     ]
-
+    uploadArchives= [repository_url: "file:///IT/Android//repository/"]
 }

@@ -17,6 +17,11 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        //从本地仓库拉
+//        maven { url 'E:\\IT\\Android\\repository' }
+        //从远程仓库拉代码
+        maven { url 'https://raw.githubusercontent.com/songjianzaina/MavenRepository/master' }
+
     }
 
 

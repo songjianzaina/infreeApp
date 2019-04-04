@@ -12,7 +12,6 @@ import com.loopj.android.http.FileAsyncHttpResponseHandler;
 import java.io.File;
 
 import cc.urowks.ulibrary.bean.AppVersion;
-import cc.urowks.ulibrary.net.async_http.api.UserApi;
 import cc.urowks.ulibrary.util.AppUtil;
 import cc.urowks.ulibrary.util.LogUtils;
 import cc.urowks.ulibrary.util.ToastUtil;

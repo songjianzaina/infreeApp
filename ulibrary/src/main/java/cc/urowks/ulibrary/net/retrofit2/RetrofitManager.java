@@ -1,4 +1,4 @@
-package com.insworks.infreeapp.net;
+package cc.urowks.ulibrary.net.retrofit2;
 
 /**
  * author : JOJO
@@ -20,8 +20,7 @@ import java.util.concurrent.TimeUnit;
 import cc.urowks.ulibrary.InsworksApp;
 import cc.urowks.ulibrary.bean.BaseHttpResponse;
 import cc.urowks.ulibrary.bean.ErrorBean;
-import cc.urowks.ulibrary.net.retrofit2.BaseObserverListener;
-import cc.urowks.ulibrary.net.retrofit2.RxSchedulers;
+import cc.urowks.ulibrary.net.Api;
 import cc.urowks.ulibrary.util.NetworkUtil;
 import io.reactivex.Observable;
 import io.reactivex.observers.DisposableObserver;
@@ -87,7 +86,7 @@ public class RetrofitManager {
                             .readTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS)
                             .build();
                     retrofit = new Retrofit.Builder()
-                            .baseUrl("http://t.weather.sojson.com/api/")//基础URL 建议以 / 结尾
+                            .baseUrl(Api.getServerHost())//基础URL 建议以 / 结尾
                             .addConverterFactory(GsonConverterFactory.create())//设置 Json 转换器
                             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())//RxJava 适配器
                             .client(mClient)
@@ -98,9 +97,7 @@ public class RetrofitManager {
         return retrofit;
     }
 
-    public ApiService getRequestService() {
-        return getRetrofit().create(ApiService.class);
-    }
+
 
     /**
      * 设置公共查询参数

@@ -6,6 +6,8 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
+import com.alibaba.android.arouter.launcher.ARouter;
+
 import cc.urowks.ulibrary.util.ActivityManager;
 import cc.urowks.ulibrary.util.CrashHandler;
 import cc.urowks.ulibrary.util.LogUtils;
@@ -14,7 +16,7 @@ import cc.urowks.ulibrary.util.LogUtils;
 /**
  * Created by songjian on 216/10/19.
  */
-public class InsworksApp extends Application {
+public class InsworksApp extends android.support.multidex.MultiDexApplication {
 
     private static InsworksApp instance;
     private String runningEnvironment;
@@ -32,6 +34,14 @@ public class InsworksApp extends Application {
         readEnvironmentConfig();
         setIsWriteLog();
         registerActivityLifecycleCallbacks(new OverallActivityLifecycleCallbacks());
+        initRouter(this);
+    }
+    public static void initRouter(Application application) {
+        if (BuildConfig.DEBUG) {
+            ARouter.openLog();     // 打印日志
+            ARouter.openDebug();   // 开启调试模式(如果在InstantRun模式下运行，必须开启调试模式！线上版本需要关闭,否则有安全风险)
+        }
+        ARouter.init(application);
     }
 
     public static InsworksApp getInstance() {
