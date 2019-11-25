@@ -1,5 +1,6 @@
 package cc.urowks.ulibrary.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,6 +33,18 @@ public class ActivityUtil {
             return;
         }
         mContext.startActivity(new Intent(mContext, clazz));
+    }
+
+    //Activity跳转 并且销毁当前Activity
+    public static void startActivityFinish(Class clazz, Activity activity) {
+        if (mContext == null) {
+            LogUtils.i(TAG, "ActivityUtil未初始化");
+            return;
+        }
+        mContext.startActivity(new Intent(mContext, clazz));
+        if (activity != null) {
+            activity.finish();
+        }
     }
 
     //Activity跳转 并携带数据
